@@ -1,4 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { DEFAULT_LANGUAGE } from "../utils/constants.js";
 
 const movieSlice = createSlice({
     name: "movie",
@@ -10,6 +11,8 @@ const movieSlice = createSlice({
         movieTrailer: null,
         isTrailerModalOpen: false,
         selectedMovieId: null,
+        selectedLanguage: DEFAULT_LANGUAGE,
+        isLoading: false,
     },
     reducers: {
         addNowPlayingMovies: (state, action) => {
@@ -36,6 +39,23 @@ const movieSlice = createSlice({
             state.selectedMovieId = null;
             state.movieTrailer = null;
         },
+        setSelectedLanguage: (state, action) => {
+            state.selectedLanguage = action.payload;
+            // Clear all movies when language changes
+            state.nowPlayingMovies = [];
+            state.popularMovies = [];
+            state.topRatedMovies = [];
+            state.upcomingMovies = [];
+        },
+        setLoading: (state, action) => {
+            state.isLoading = action.payload;
+        },
+        clearAllMovies: (state) => {
+            state.nowPlayingMovies = [];
+            state.popularMovies = [];
+            state.topRatedMovies = [];
+            state.upcomingMovies = [];
+        },
     },
 });
 
@@ -46,7 +66,10 @@ export const {
     addUpcomingMovies, 
     addMovieTrailer,
     openTrailerModal,
-    closeTrailerModal
+    closeTrailerModal,
+    setSelectedLanguage,
+    setLoading,
+    clearAllMovies
 } = movieSlice.actions;
 
 export default movieSlice.reducer;

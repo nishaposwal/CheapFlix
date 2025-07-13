@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "netflix-c8ad2"
-  }
+    "default": "netflix-c8ad2",
+    "y": "cheapflix-8f9b4"
+  },
+  "targets": {},
+  "etags": {}
 }

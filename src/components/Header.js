@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import logo from '../assets/logo.png';
 import SearchBar from './SearchBar';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
   const navigate = useNavigate(); 
@@ -31,6 +32,7 @@ const Header = () => {
               >
                 🔍
               </button>
+              <LanguageSelector />
               <button className='text-white bg-red-600 px-4 py-2 rounded-md' onClick={handleSignOut}>Sign out</button>
             </div>
           )}
