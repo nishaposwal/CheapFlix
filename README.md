@@ -1,6 +1,42 @@
-# Netflix GPT Clone
+# Cheapflix
 
 A React-based movie streaming application that uses TMDB API to display movies, trailers, and provides a Netflix-like experience.
+
+## ✨ Features
+
+### 🎬 Movie Discovery
+- **Browse Movies**: Explore now playing, popular, top-rated, and upcoming movies
+- **Movie Categories**: Filter movies by different categories and genres
+- **Search Functionality**: Search for movies by title, actor, or genre
+- **Movie Details**: View comprehensive movie information including cast, crew, and ratings
+
+### 🎥 Video & Media
+- **Movie Trailers**: Watch official movie trailers and teasers
+- **Movie Posters**: High-quality movie posters and backdrop images
+- **Responsive Design**: Optimized viewing experience across all devices
+
+### 🌍 International Support
+- **Multi-language Support**: Movies available in multiple languages
+- **Language Selection**: Choose from popular languages including English, Hindi, Spanish, French, German, and more
+- **Localized Content**: Movie information and descriptions in selected language
+
+### 🔐 User Experience
+- **User Authentication**: Secure login and registration system
+- **Personalized Experience**: User preferences and watch history
+- **Responsive UI**: Modern, Netflix-inspired interface design
+- **Smooth Navigation**: Intuitive browsing and navigation experience
+
+### 🛠 Technical Features
+- **React Redux**: State management with Redux Toolkit
+- **Firebase Integration**: Authentication and hosting
+- **TMDB API**: Real-time movie data from The Movie Database
+- **Tailwind CSS**: Modern styling with utility-first CSS framework
+- **Progressive Web App**: Fast loading and offline capabilities
+
+### 📱 Platform Support
+- **Cross-platform**: Works on desktop, tablet, and mobile devices
+- **Modern Browsers**: Optimized for Chrome, Firefox, Safari, and Edge
+- **Responsive Layout**: Adaptive design for all screen sizes
 
 ## Environment Setup
 
